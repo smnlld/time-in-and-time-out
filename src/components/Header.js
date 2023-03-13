@@ -11,6 +11,7 @@ export const Header = () => {
         <strong className=" font-extrabold tracking-widest font-sans">
           Simon Ullado
         </strong>
+        <span> 4-ITF</span>
       </p>
     </>
   );

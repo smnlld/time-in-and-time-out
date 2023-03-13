@@ -44,42 +44,42 @@ function App() {
       </div>
       <div className="mx-auto h-auto w-auto flex-center bg-[#708090] relative p-[10px]">
         <div>
-          <h1 className="sm:text-center text-black text-5xl">
+          <h1 className="sm:text-center text-black text-5xl my-4">
             Current Time: {new Date().toLocaleTimeString()}
           </h1>
         </div>
-        <div className="sm:text-center">
+        <div className="sm:text-center my-4">
           <button
-            className="bg-yellow-600 hover:bg-yellow-300 text-white text-xl tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
+            className="bg-yellow-600 hover:bg-yellow-300 text-white text-2xl tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
             onClick={handleTimeIn}
           >
             Time In
           </button>
-          <div className="underline text-xl">
+          <div className="underline text-xl my-2 tracking-wider">
             {timeIn && <p>Time In: {new Date(timeIn).toLocaleString()}</p>}
           </div>
         </div>
-        <div className="sm:text-center">
+        <div className="sm:text-center my-4">
           <button
-            className="bg-red-600 hover:bg-red-300 text-white tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
+            className="bg-red-600 hover:bg-red-300 text-white  text-2xl tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
             onClick={handleTimeOut}
           >
             Time Out
           </button>
-          <div className="underline text-xl">
+          <div className="underline text-xl my-2 tracking-wider">
             {timeOut && <p>Time Out: {new Date(timeOut).toLocaleString()}</p>}
           </div>
         </div>
-        <div className="sm:text-center">
+        <div className="sm:text-center my-4">
           <button
-            className="bg-green-600 hover:bg-green-300 text-white tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
+            className="bg-green-600 hover:bg-green-300 text-white   text-2xl tracking-widest font-bold py-2 px-4 rounded-lg my-2 mx-4"
             onClick={handleTimeDiff}
           >
             Time Difference
           </button>
-          <div className="underline text-xl text-green-500">
+          <div className="underline text-xl my-2 text-green-500 tracking-wider">
             {timeDiff && (
-              <p>Time Difference: {timeDiff} This is the Time Difference </p>
+              <p> <strong>Time Difference: </strong>{timeDiff}  </p>
             )}
           </div>
         </div>
